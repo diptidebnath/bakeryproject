@@ -1,0 +1,48 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(133,133,133, 0.5);
+  overflow: hidden;
+ 
+
+}
+
+nav{
+	float: right;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+   text-align: right;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Container holding the image and the text */
+.header{
+  background-image: url("image/anniversary-beautiful-birthday-birthday-cake-433527.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100;
+
+}
+.header-text{
+	clear: both;
+	display: white;
+	text-align: center;
+}
