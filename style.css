@@ -3,6 +3,8 @@ body{
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.25;
+  padding: 0;
+  margin: 0;
 }
 
 img{
@@ -55,9 +57,12 @@ nav{
   background-image: url("image/anniversary-beautiful-birthday-birthday-cake-433527.jpg");
   background-size: cover;
   background-position: center;
-  height: 650px;
+  height: 250px;
   width: 100;
 
+}
+.header.home{
+  height: 650px;
 }
 .header-text{
 	clear: both;
@@ -68,10 +73,16 @@ nav{
   margin: auto;
 }
 
-.header-text h2{
+ .header-text h1{
+font-size: 45px;
+margin-top: 50px;
+}
+.home .header-text h2{
 font-size: 45px;
 margin-top: 150px;
 }
+
+
 .many-button{
   text-align: center;
   font-size: 50px;
@@ -135,10 +146,11 @@ box-sizing: border-box;
   width: 100%;
   background-color: rgba(255,255,255,.7);
 }
-.inner-container{
+.our-service .inner-container{
   padding: 150px 0;
   z-index: 2;
   position: relative;
+  overflow: hidden;
 }
 .information{
  text-align: center;
@@ -164,9 +176,41 @@ text-transform: uppercase;
   padding: 8px 15px;
   color: #ffffff;
   text-decoration: none;
-
 }
 
 
+.coustomer-feedback{
+  width: 75%;
+  padding: 200px;
+  display: block;
+  float: left;
+
+}
+.comment-1{
+  border-style: solid;
+}
+footer{
+  background-color: #222222;
+  overflow: hidden;
+  color: #ffffff;
+
+}
+footer .inner-container{
+  padding: 50px 0;
+  overflow: hidden;
+  
+}
+.social-icons{
+display: block;
+list-style: none;
+}
+.social-icons li {
+  float: left;
+}
+.social-icons img{
+width: 32px;
+height: auto;
+margin: 5px;
+}
 
 
