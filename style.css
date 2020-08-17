@@ -6,6 +6,9 @@ body{
   padding: 0;
   margin: 0;
 }
+a:focus{
+  outline: 1px solid #222;
+}
 
 img{
   max-width: 100%;
@@ -14,16 +17,25 @@ img{
   margin-right: 20px;
   margin-bottom: 20px;
   max-width: 100%;
+  float: left;
 }
 .bold{
   font-weight: bold;
 }
 .py-3{
-padding-top: 50px;
-padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .clearfix{
   clear: both;
+}
+.one-third{
+  width: 33%;
+  float: left;
+}
+.two-third{
+  width: 67%;
+  float: left;
 }
 .inner-container{
   max-width: 1000px;
@@ -33,11 +45,12 @@ padding-bottom: 50px;
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: rgba(133,133,133, 0.5);
+  background-color: rgba(0,0,0, 0.6);
   overflow: hidden;
   padding: 10px 30px;
 
 }
+
 
 nav{
 	float: right;
@@ -51,19 +64,27 @@ nav{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-   text-align: right;
+  text-align: right;
+}
+.topnav a.logo {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.topnav a.logo:hover {
+  background-color: transparent;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+ background-color: #E367A2;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #E367A2;
-  color: white;
+  color: #000;
 }
 /* Container holding the image and the text */
 .header{
@@ -71,8 +92,8 @@ nav{
   background-size: cover;
   background-position: center;
   height: 250px;
-  width: 100;
- 
+  width: 100%;
+
   box-sizing: border-box;
 
 }
@@ -85,28 +106,26 @@ nav{
 	text-align: center;
   color: #ffffff;
   max-width: 400px;
+  min-height: 150px;
   margin: auto;
 }
 
- .header-text h1{
-font-size: 45px;
-margin-top: 50px;
+.header-text h1{
+  font-size: 45px;
+  margin-top: 50px;
+
 }
 .home .header-text h2{
-font-size: 45px;
-margin-top: 150px;
+  font-size: 45px;
+  margin-top: 150px;
+  text-align: center;
 }
 .home h1{
-margin: 0px;
+  margin: 0px;
 }
 
 
-.many-button{
-  text-align: center;
-  font-size: 50px;
-  color: #ffffff;
-  
-}
+
 
 /* add summary immage here*/
 
@@ -117,14 +136,7 @@ margin: 0px;
 
 }
 
-.summary-text, .summary-image {
-  margin: 0;
-  list-style: none;
-  width: 50%; 
-  float: left;
-  display: block;
 
-}
 
 .about-us{
   padding-top: 20px;
@@ -138,11 +150,11 @@ margin: 0px;
 }
 .one-fourth{
   width: 25%;
-float: left;
-display: block;
-text-align: center;
-padding: 0 15px;
-box-sizing: border-box;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0 15px;
+  box-sizing: border-box;
 
 }
 .one-fourth img{
@@ -176,8 +188,8 @@ box-sizing: border-box;
  
 }
 .information h3{
-font-weight: bold; 
-text-transform: uppercase;
+  font-weight: bold; 
+  text-transform: uppercase;
 }
 
 .one-half{
@@ -191,9 +203,10 @@ text-transform: uppercase;
 }
 .button{
   background-color: #E367A2;
-  padding: 8px 15px;
-  color: #ffffff;
-  text-decoration: none;
+padding: 8px 25px;
+color: #000;
+text-decoration: none;
+font-weight: bold;
 }
 
 
@@ -219,16 +232,16 @@ footer .inner-container{
   
 }
 .social-icons{
-display: block;
-list-style: none;
+  display: block;
+  list-style: none;
 }
 .social-icons li {
-  float: left;
+  display: inline-block;
 }
 .social-icons img{
-width: 32px;
-height: auto;
-margin: 5px;
+  width: 32px;
+  height: auto;
+  margin: 5px;
 }
 
 
@@ -241,22 +254,117 @@ label{
 input{
   margin: 0px;
   padding: 5px 10px;
-width: 200px;
+  width: 200px;
 }
 textarea{
-height: 120px;
-margin-bottom: 10px;
-width: 300px;
+  height: 120px;
+  margin-bottom: 10px;
+  width: 300px;
 }
 .submit{
   background-color: #E367A2;
-  color: #ffffff;
+  color: #000;
   border: 0;
   padding: 10px 20px;
 }
 .submit:hover{
-color: #222222;
+  color: #222222;
 }
 .submit:focus{
-outline: 2px solid #222222;
+  outline: 2px solid #222222;
+}
+
+
+/* menupage css */
+
+.menu-container div{
+  width: 32%;
+  margin-right: 1%;
+  float: left;
+  display: block;
+  height: 320px;
+  text-align: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.menu-container img{
+ object-fit: cover;
+ height: 70%;
+ width: 100%;
+ transition: transform .2s; /* Animation */
+ overflow: hidden;
+}
+.menu-container img:hover{
+ transform: scale(1.1);
+ overflow: hidden;
+ transition: transform .2s; /* Animation */
+}
+/* gallery page css */
+.masonry { /* Masonry container */
+  column-count: 4;
+  column-gap: 1em;
+  margin-top: 20px;
+}
+
+.masonry img { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+/*event page */
+.blog-text{
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.article{
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.quick-links{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+.quick-links a{
+  color: #fff;
+  }
+.quick-links li{
+margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .one-fourth, .one-half, .one-third, .two-third, .menu-container div {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .header-text {
+  
+    padding: 0 20px;
+}
+.our-story-text {
+    padding: 20px 20px 40px;
+}
+.header {
+  height: 350px;
+    }
+    .inner-container {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.masonry {
+    column-count: 2;
+}
+.submit {
+    margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .masonry {
+    column-count: 1;
+}
 }
